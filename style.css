@@ -1,0 +1,61 @@
+:root {
+    --regular-manrope: 400 16px/22px Manrope;
+    --light-manrope: 300 16px/22px Manrope;
+    --bold-manrope: 700 16px/22px Manrope;
+    --extrabold-manrope: 800 16px/22px Manrope;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font: var(--regular-manrope);
+}
+
+h1 {
+    font: var(--bold-manrope);
+    margin-bottom: 1em;
+}
+
+#navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+#navigation a {
+    display: block;
+    border-left: 1px solid black;
+    margin: 0.5em;
+    padding: 0.25em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    height: 100vh;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team #team-description {
+    margin-bottom: 5em;
+}
+
+#team figcaption {
+    text-align: center;
+}
+
+#team img {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.img-row {
+    display: flex; 
+    margin-bottom: 2em;
+}
