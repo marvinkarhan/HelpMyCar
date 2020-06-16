@@ -25,13 +25,14 @@ h1 {
 }
 
 #navigation a {
+    --text-color: #707070;
     display: block;
-    border-left: 1px solid black;
+    border-left: 2px solid var(--text-color);
     margin: 0.5em;
     padding: 0.25em;
     padding-left: 1em;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 section {
@@ -40,6 +41,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#product {
+    padding: 0;
+    overflow: hidden;
 }
 
 #team #team-description {
