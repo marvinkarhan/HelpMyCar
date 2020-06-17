@@ -16,8 +16,8 @@ let observer = new IntersectionObserver((entries, observer) => {
         el.style.fontWeight = 700;
         el.style.borderWidth = '2px';
       } else {
-        el.style.color = '#707070';
-        el.style.borderColor = '#707070';
+        el.style.color = '#969696';
+        el.style.borderColor = '#969696';
         el.style.fontWeight = 400;
         el.style.borderWidth = ' 1px';
       }
