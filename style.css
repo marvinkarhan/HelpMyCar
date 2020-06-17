@@ -4,13 +4,20 @@
     --bold-manrope: 700 16px/22px Manrope;
     --extrabold-manrope: 800 16px/22px Manrope;
     --text-color: #707070;
-    scroll-behavior: smooth;
 }
 
 * {
     padding: 0;
     margin: 0;
     font: var(--regular-manrope);
+}
+
+#page-wrapper {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -42,6 +49,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    scroll-snap-align: start;
 }
 
 #landing-page {
@@ -61,7 +69,7 @@ section {
 }
 
 #process {
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #process img {
