@@ -3,6 +3,7 @@
     --light-manrope: 300 16px/22px Manrope;
     --bold-manrope: 700 16px/22px Manrope;
     --extrabold-manrope: 800 16px/22px Manrope;
+    --text-color: #707070;
     scroll-behavior: smooth;
 }
 
@@ -22,12 +23,12 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     left: 2%;
+    z-index: 10;
 }
 
 #navigation a {
-    --text-color: #707070;
     display: block;
-    border-left: 2px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
     margin: 0.5em;
     padding: 0.25em;
     padding-left: 1em;
@@ -43,9 +44,34 @@ section {
     justify-content: center;
 }
 
-#product {
+#landing-page {
     padding: 0;
     overflow: hidden;
+    background-image: url('assets/worried-young-woman-sitting-near-broken-automobile-at-4173090.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#architecture {
+    background-color: #251F48;
+}
+
+#architecture img {
+    align-self: center;
+}
+
+#process {
+    justify-content: space-evenly;
+}
+
+#process img {
+    align-self: center;
+    width: auto;
+    height: 38%;
+}
+
+#team {
+    position: relative;
 }
 
 #team #team-description {
@@ -62,6 +88,27 @@ section {
 }
 
 .img-row {
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 870px;
     margin-bottom: 2em;
+}
+
+#footer {
+    position: absolute;
+    background-color: #251F48;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer a:hover {
+    text-decoration: underline;
 }
