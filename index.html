@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HelpMyCar</title>
+  <link rel="shortcut icon" href="assets/appicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Manrope:300,400,700,800" rel="stylesheet">
 </head>
@@ -18,19 +19,27 @@
     <a id="team-nav" href="#team">Team</a>
   </nav>
   <div id="content-wrapper">
-    <!-- <section id="landing-page"></section> -->
     <section id="product">
 
     </section>
     <section id="technologies"></section>
     <section id="architecture" class="dark">
-      <img src="assets/architecture/architecture.png" alt="Architecture diagram">
+      <div class="content">
+        <p class="description">
+          Mit hilfe eines browsers können die endnutzer des HelpMyCar-Systems auf die App und das Dashboad, die als Angular Apps vom Frontend zur verfügung gestellt werden, zugreifen.<br><br>
+          Die Angular Apps besorgen über HTTP/WebSockets die von den Nutzern angefragten Informationen von dem spring boot server, 
+          welcher über eine Caruso Dataplace API-Schnittstelle information von vernetzten fahrzeugen holt und dem Frontend bereitstellt.<br><br>
+          Die Zusatzfunktion die Fahrzeuge im Dashboard auf einer Karte zu sehen wird mithilfe einer Google-API ermöglicht. 
+        </p>
+        <div class="spacer"></div>
+        <img src="assets/architecture/architecture.png" alt="Architecture diagram">
+      </div>
     </section>
     <section id="process">
       <img src="assets/process/Design Process schwarz.png" width="799px" height="354px" alt="Design process overview">
       <img src="assets/process/process_overview.png" width="799px" height="317px" alt="Scrum process overview">
     </section>
-    <section id="team">
+    <section id="team" class="dark">
       <h1>Unser Team</h1>
       <p id="team-description">Bestehend aus 4 Kommunikationsdesigner und 5 Informatikstudenten der<br>
         Hochschule Mannheim bieten wir ein umfassendes Paket an Kompetenzen.<br>

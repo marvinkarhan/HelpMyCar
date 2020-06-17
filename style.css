@@ -45,7 +45,7 @@ h1 {
 
 section {
     height: 100vh;
-    padding-left: 20%;
+    padding-left: calc(2% + 250px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,16 +53,25 @@ section {
     scroll-snap-stop: always;
 }
 
-#landing-page {
-    padding: 0;
-    overflow: hidden;
-    background-image: url('assets/worried-young-woman-sitting-near-broken-automobile-at-4173090.jpg');
-    background-position: center;
-    background-size: cover;
+.dark {
+    color: #FFF;
+    background-color: #251F48;
 }
 
-#architecture {
-    background-color: #251F48;
+
+#architecture .content {
+    display: flex;
+    align-items: center;
+}
+
+#architecture .content .description {
+    min-width: 150px;
+    max-width: 400px;
+}
+
+#architecture .content .spacer {
+    width: 100px;
+    min-width: 0px;
 }
 
 #architecture img {
@@ -99,13 +108,13 @@ section {
 .img-row {
     display: flex;
     flex-wrap: wrap;
-    min-width: 870px;
+    min-width: 865px;
     margin-bottom: 2em;
 }
 
 #footer {
     position: absolute;
-    background-color: #251F48;
+    background-color: #FFF;
     bottom: 0px;
     left: 0;
     width: 100%;
@@ -115,7 +124,7 @@ section {
 
 #footer a {
     text-decoration: none;
-    color: #FFF;
+    color: var(--text-color);
 }
 
 #footer a:hover {
