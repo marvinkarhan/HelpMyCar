@@ -94,9 +94,19 @@ a {
     position: relative;
     padding: 0;
     overflow: hidden;
-    background-image: url('assets/handymokeuo.png');
+    background-image: url('assets/worried-young-woman-sitting-near-broken-automobile-at-4173090.jpg');
     background-position: center;
     background-size: cover;
+    justify-content: unset;
+}
+
+#landing-page #ellipse {
+    height: auto;
+    width: 89%;
+    align-self: flex-end;
+    position: relative;
+    top: -38%;
+    right: -30%;
 }
 
 #landing-page .content {
@@ -163,19 +173,6 @@ a {
     padding: 10px;
 }
 
-@media screen and (max-width: 1400px), screen and (max-height: 800px) {
-    #technologies .content {
-        padding-bottom: 50px;
-        padding-right: 50px;
-    }
-    #technologies .content .card .header-logo {
-        display: none;
-    }
-    #technologies .content .card h1 {
-        margin-top: 1em;
-    }
-}
-
 #technologies .content .card ul {
     list-style-type:none;
     align-self: flex-start;
@@ -206,6 +203,19 @@ a {
 #technologies .content .card ul li .center {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1400px), screen and (max-height: 800px) {
+    #technologies .content {
+        padding-bottom: 50px;
+        padding-right: 50px;
+    }
+    #technologies .content .card .header-logo {
+        display: none;
+    }
+    #technologies .content .card h1 {
+        margin-top: 1em;
+    }
 }
 
 #architecture .content {
@@ -279,10 +289,14 @@ a {
 
 #footer {
     position: absolute;
-    background-color: #FFF;
     bottom: 0px;
     left: 0;
     width: 100%;
     padding: 0.5em 0;
     text-align: center;
+}
+
+#footer a {
+    color: #FFF;
+    font-size: 12px;
 }
