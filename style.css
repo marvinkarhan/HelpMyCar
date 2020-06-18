@@ -150,9 +150,8 @@ a {
     flex: 1 0 auto;
 }
 
-#technologies .content .card .card-wrapper {
+#technologies .content .card-wrapper {
     padding: 0;
-
 }
 
 #technologies .content .card .sub-card {
@@ -165,6 +164,10 @@ a {
 }
 
 @media screen and (max-width: 1400px), screen and (max-height: 800px) {
+    #technologies .content {
+        padding-bottom: 50px;
+        padding-right: 50px;
+    }
     #technologies .content .card .header-logo {
         display: none;
     }
