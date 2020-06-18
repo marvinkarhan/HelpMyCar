@@ -150,9 +150,27 @@ a {
     flex: 1 0 auto;
 }
 
+#technologies .content .card .card-wrapper {
+    padding: 0;
+
+}
+
+#technologies .content .card .sub-card {
+    width: calc(100% - 2em);
+}
+
 #technologies .content .card .header-logo {
     height: 80px;
     padding: 10px;
+}
+
+@media screen and (max-width: 1400px), screen and (max-height: 800px) {
+    #technologies .content .card .header-logo {
+        display: none;
+    }
+    #technologies .content .card h1 {
+        margin-top: 1em;
+    }
 }
 
 #technologies .content .card ul {
