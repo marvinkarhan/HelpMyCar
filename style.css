@@ -70,6 +70,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
@@ -77,6 +78,10 @@ section {
 .dark {
     color: #FFF!important;
     background-color: #251F48;
+}
+
+.dark a {
+    color: #FFF!important;
 }
 
 .headline {
@@ -94,20 +99,11 @@ a {
     position: relative;
     padding: 0;
     overflow: hidden;
-    background-image: url('assets/worried-young-woman-sitting-near-broken-automobile-at-4173090.jpg');
+    background-image: url('assets/handymokeuo.png');
     background-position: center;
     background-size: cover;
-    justify-content: unset;
 }
 
-#landing-page #ellipse {
-    height: auto;
-    width: 89%;
-    align-self: flex-end;
-    position: relative;
-    top: -38%;
-    right: -30%;
-}
 
 #landing-page .content {
     position: relative;
@@ -155,17 +151,28 @@ a {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    border: 1px solid black;
+    border: 1px solid #000;
+    margin: 5px;
     padding: 0 1em;
     flex: 1 0 auto;
 }
 
 #technologies .content .card-wrapper {
     padding: 0;
+    border: 0;
+}
+
+#technologies .content .card-wrapper div:nth-child(odd) {
+    margin-bottom: 5px;
+}
+
+#technologies .content .card-wrapper div:nth-child(even) {
+    margin-top: 5px;
 }
 
 #technologies .content .card .sub-card {
     width: calc(100% - 2em);
+    margin: 0;
 }
 
 #technologies .content .card .header-logo {
