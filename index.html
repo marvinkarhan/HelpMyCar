@@ -6,30 +6,141 @@
   <title>HelpMyCar</title>
   <link rel="shortcut icon" href="assets/appicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Manrope:300,400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Manrope:100,300,400,700,800" rel="stylesheet">
 </head>
 
 <body>
 
   <nav id="navigation">
-    <a id="product-nav" href="#product">Produkt</a>
+    <a id="app-nav" href="#app">App</a>
+    <a id="dashboard-nav" href="#dashboard">Dashboard</a>
     <a id="technologies-nav" href="#technologies">Technologien</a>
     <a id="architecture-nav" href="#architecture">Architektur</a>
     <a id="process-nav" href="#process">Prozess</a>
     <a id="team-nav" href="#team">Team</a>
   </nav>
-  <div id="content-wrapper">
-    <section id="product">
 
+  <a id="back-top" href="#landing-page">
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60">
+      <circle cx="30" cy="30" r="30" fill="#000" />
+      <rect x="20" y="20" width="20" height="20"
+        style="fill:none;stroke:#FFF;stroke-width:3px;stroke-dasharray:40,40;transform-origin:center;transform:translateY(5px)rotate(-45deg);" />
+    </svg>
+  </a>
+  <div id="content-wrapper">
+    <section id="landing-page" class="dark">
+      <div class="content">
+        <span class="headline"><b>Help</b>MyCar</span><br>
+        <h1>Your Roadside Assistance for every situation.</h1>
+        <p>Das HelpMyCar-System hilft Autofahrern mit einem vernetzten Autos, schnell und einfach Pannen bei einem
+          Pannenhilfeunternehmen zu melden.
+          Mitarbeiter dieses Unternehmens können die Pannenmeldungen auf einem Dashboard ansehen.
+          Dabei werden die von dem vernetzten Auto übermittelte Daten über den Caruso Dataplace geholt,
+          anzuzeigt und bestehende Probleme visualisiert.
+          Dem Mitarbeiter die aktuell verfügbaren Service-Fahrzeugen des Unternehmens angezeigt.
+          Mit Hilfe dieser Informationen kann der Mitarbeiter entscheiden, wie man dem Kunden am schnellsten helfen
+          kann.
+        </p>
+      </div>
+      <a href="#app" class="arrow-down"></a>
     </section>
-    <section id="technologies"></section>
+    <section id="app"></section>
+    <section id="dashboard"></section>
+    <section id="technologies">
+      <span class="headline">Verwendete Technologien</span>
+      <div class="content">
+        <div class="card">
+          <img class="header-logo" src="assets/technologies/angular.svg" height="100px" width="100px"
+            alt="Angular logo">
+          <h1><a href="https://angular.io/" target="_blank">Angular</a></h1>
+          <p class="description">
+            Angular ist ein TypeScript Frontend Framework für die Erstellung von plattformübergreifenden
+            Webanwendungen.<br><br>
+            Mit Angular in verbindung Verwendete Technologien:
+          <ul>
+            <li>
+              <img src="assets/technologies/HTML5_logo_32.png" alt="HTML5 logo">
+              <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>
+            </li>
+            <li>
+              <span class="wrapper">
+                <span class="superset center">
+                  <img src="assets/technologies/Sass_Logo_Color.svg" alt="Sass logo">
+                  <a href="https://github.com/sass/sass-spec" target="_blank">Sass</a><br>
+                </span>
+                <span class="subset center">
+                  <img src="assets/technologies/CSS3_logo.png" alt="CSS3 logo">
+                  <a href="https://www.w3.org/Style/CSS/specs.de.html" target="_blank">CSS3</a>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="wrapper">
+                <span class="superset center">
+                  <img src="assets/technologies/TypeScript.svg" alt="TypeScript logo">
+                  <a href="https://github.com/microsoft/TypeScript/blob/master/doc/spec.md"
+                    target="_blank">TypeScript</a>
+                </span>
+                <span class="subset center">
+                  <img src="assets/technologies/JavaScript_logo.svg" alt="JavaScript logo">
+                  <a href="https://www.ecma-international.org/ecma-262/10.0/index.html" target="_blank">JavaScript</a>
+                </span>
+              </span>
+            </li>
+          </ul>
+          </p>
+        </div>
+        <div class="card">
+          <img class="header-logo" src="assets/technologies/springboot.svg" height="100px" width="auto"
+            alt="Spring Boot logo">
+          <h1><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot</a></h1>
+          <p class="description">
+            Spring Boot ist eine Spring Erweiterung die die Konfiguration und Erstellung von eigenständigen Spring
+            Applikationen vereinfacht.<br><br>
+            Mit Spring Boot in verbindung Verwendete Technologien:
+          <ul>
+            <li>
+              <img src="assets/technologies/Java-Logo.svg" alt="Java logo">
+              <a href="https://docs.oracle.com/javase/specs/jls/se8/html/index.html" target="_blank">Java</a>
+            </li>
+            <li>
+              <img src="assets/technologies/maven_logo.png" alt="Maven logo">
+              <a href="http://maven.apache.org/pom.html" target="_blank">Maven</a>
+            </li>
+          </ul>
+          </p>
+        </div>
+        <div class="card">
+          <img class="header-logo" src="assets/technologies/Adobe_XD_CC_icon.svg" height="100px" width="auto"
+            alt="Adobe XD logo">
+          <h1><a href="https://www.adobe.com/de/products/xd.html" target="_blank">Adobe XD</a></h1>
+          <p class="description">
+            Adobe XD ist ein Design-Tool zu Erstellung von Wireframes und Mockups von Web-Apps und Mobile Apps
+          </p>
+        </div>
+        <div class="card">
+          <img class="header-logo" src="assets/technologies/Docker_logo.svg" height="100px" width="auto"
+            alt="Docker logo">
+          <h1><a href="https://www.docker.com/" target="_blank">Docker</a></h1>
+          <p class="description">
+            Docker ist eine Software zur Containervirtualisierung, sie vereinfacht das Deployment von Anwendungen.
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="architecture" class="dark">
       <div class="content">
         <p class="description">
-          Mit hilfe eines browsers können die endnutzer des HelpMyCar-Systems auf die App und das Dashboad, die als Angular Apps vom Frontend zur verfügung gestellt werden, zugreifen.<br><br>
-          Die Angular Apps besorgen über HTTP/WebSockets die von den Nutzern angefragten Informationen von dem spring boot server, 
-          welcher über eine Caruso Dataplace API-Schnittstelle information von vernetzten fahrzeugen holt und dem Frontend bereitstellt.<br><br>
-          Die Zusatzfunktion die Fahrzeuge im Dashboard auf einer Karte zu sehen wird mithilfe einer Google-API ermöglicht. 
+          Mit hilfe eines browsers können die endnutzer des HelpMyCar-Systems auf die App und das Dashboad, die als
+          Angular Apps vom Frontend zur verfügung gestellt werden, zugreifen.<br><br>
+          Die Angular Apps besorgen über HTTP/WebSockets die von den Nutzern angefragten Informationen von dem spring
+          boot server,
+          welcher über eine Caruso Dataplace API-Schnittstelle information von vernetzten fahrzeugen holt und dem
+          Frontend bereitstellt.<br><br>
+          Die Zusatzfunktion die Fahrzeuge im Dashboard auf einer Karte zu sehen wird mithilfe einer Google-API
+          ermöglicht.<br><br>
+          <a href="https://docs.google.com/document/d/1RltXlK2qRYT2AJGyXw6D1JgG6KOfY2wIGi_slux4Obc/edit?usp=sharing"
+            target="_blank">In der Architekturspezifikiation weiter lesen...</a>
         </p>
         <div class="spacer"></div>
         <img src="assets/architecture/architecture.png" alt="Architecture diagram">
@@ -49,25 +160,25 @@
         <figure>
           <img src="assets/profile_pictures/Sarah.png" width="184px" height="184px" alt="Sarah">
           <figcaption>
-            Sarah
+            Sarah Willig
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Anna.png" width="184px" height="184px" alt="Anna">
           <figcaption>
-            Anna
+            Anna Winkenbach
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Frauke.png" width="184px" height="184px" alt="Frauke">
           <figcaption>
-            Frauke
+            Frauke Stefanski
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Selina.png" width="184px" height="184px" alt="Selina">
           <figcaption>
-            Selina
+            Selina Mondrowski
           </figcaption>
         </figure>
       </div>
@@ -75,31 +186,31 @@
         <figure>
           <img src="assets/profile_pictures/Simon.png" width="184px" height="184px" alt="Simon">
           <figcaption>
-            Simon
+            Simon Schneider
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Maximilian.png" width="184px" height="184px" alt="Maximilian">
           <figcaption>
-            Maximilian
+            Maximilian Broszio
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Marvin.png" width="184px" height="184px" alt="Marvin">
           <figcaption>
-            Marvin
+            Marvin Karhan
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Martin.png" width="184px" height="184px" alt="Martin">
           <figcaption>
-            Martin
+            Martin Wagner
           </figcaption>
         </figure>
         <figure>
           <img src="assets/profile_pictures/Anastasia.png" width="184px" height="184px" alt="Anastasia">
           <figcaption>
-            Anastasia
+            Anastasia Tataridou
           </figcaption>
         </figure>
       </div>
@@ -109,6 +220,8 @@
     </section>
   </div>
 
+  <script src="sectionManager.js"></script>
+  <script src="backTop.js"></script>
   <script src="script.js"></script>
 </body>
 
