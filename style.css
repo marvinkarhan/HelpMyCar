@@ -4,6 +4,7 @@
     --bold-manrope: 700 16px/22px Manrope;
     --extrabold-manrope: 800 16px/22px Manrope;
     --text-color: #707070;
+    --navigation-padding-left: calc(2% + 250px);
 }
 
 * {
@@ -66,7 +67,7 @@ b {
 
 section {
     height: 100vh;
-    padding-left: calc(2% + 250px);
+    padding-left: var(--navigation-padding-left);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,9 +86,31 @@ section {
 }
 
 .headline {
+    position: relative;
+    margin-right: var(--navigation-padding-left);
     font-size: 3.125em!important;
     line-height: normal;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+.dark .headline::after, .headline::after {
+    content: "";
+    position: absolute;
+    padding-top: 5px;
+    width: 40%;
+    border: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 5px);
+}
+
+.headline::after {
+    border-bottom: 1px solid black;
+}
+
+.dark .headline::after {
+    border-bottom: 1px solid white;
 }
 
 a {
@@ -139,6 +162,7 @@ a {
 #app .introduction .description {
     max-width: 900px;
     margin: 1em auto;
+    padding-right: var(--navigation-padding-left);
 }
 
 #app .content {
@@ -265,6 +289,7 @@ a {
     margin: 5px;
     padding: 0 1em;
     flex: 1 0 auto;
+    border-radius: 10px;
 }
 
 #technologies .content .card-wrapper {
@@ -348,7 +373,7 @@ a {
 }
 
 #architecture .headline {
-    flex-basis: 5em;
+    width: auto;
 }
 
 #architecture .content {
