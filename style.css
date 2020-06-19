@@ -1,8 +1,8 @@
 :root {
-    --regular-manrope: 400 16px/22px Manrope;
-    --light-manrope: 300 16px/22px Manrope;
-    --bold-manrope: 700 16px/22px Manrope;
-    --extrabold-manrope: 800 16px/22px Manrope;
+    --regular-manrope: 400 14px/16.8px Manrope;
+    --light-manrope: 300 14px/16.8px Manrope;
+    --bold-manrope: 700 14px/16.8px Manrope;
+    --extrabold-manrope: 800 14px/16.8px Manrope;
     --text-color: #707070;
     --navigation-padding-left: calc(2% + 250px);
 }
@@ -40,6 +40,12 @@ b {
     transform: translateY(-50%);
     left: 2%;
     z-index: 10;
+    animation: slide-in-from-left 1s ease-out bouth;
+}
+
+@keyframes slide-in-from-left {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
 }
 
 #navigation a {
@@ -144,6 +150,8 @@ a {
 #landing-page .content .headline b{
     font-size: 50px;
 }
+
+
 
 #landing-page .arrow-down {
     border: solid #FFF;
