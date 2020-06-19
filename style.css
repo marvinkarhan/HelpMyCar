@@ -157,6 +157,37 @@ a {
     object-fit: cover;
 }
 
+#dashboard .introduction {
+    text-align: center;
+}
+
+#dashboard .introduction .description {
+    max-width: 900px;
+    margin: 1em auto;
+}
+
+#dashboard .content {
+    display: flex;
+    flex-direction: row;
+}
+
+#dashboard .content .left-description {
+    padding-top: 3em;
+}
+
+#dashboard .content .right-description {
+    padding-top: 3em;
+}
+#dashboard figure {
+    flex: 0 1 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard figure img {
+    object-fit: cover;
+}
+
 #technologies .headline {
     flex: 1;
     display: flex;
@@ -279,7 +310,7 @@ a {
 
 #architecture .content .spacer {
     width: 100px;
-    min-width: 0px;
+    min-width: 0;
 }
 
 #architecture .content .description a {
@@ -343,7 +374,7 @@ a {
 
 #footer {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     width: 100%;
     padding: 0.5em 0;
