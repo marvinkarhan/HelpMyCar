@@ -45,9 +45,9 @@
       </div>
       <a href="#app" class="arrow-down"></a>
     </section>
-    <section id="app">
+    <section id="app" class="light">
       <div class="introduction">
-        <span class="headline">Driver App</span>
+        <h1>Driver App</h1>
         <p class="description">
           Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panne an seinem
           Fahrzeug zu melden
@@ -67,28 +67,36 @@
           </figcaption>
         </figure>
         <figure>
+          <img src="assets/app/App_start_page.png" alt="Start page of the App">
+          <figcaption>
+            In der Detailansicht sieht man welches Fahrzeugteil einen Fehler meldet. Darunter sieht man die Warnleuchten
+            des Fahrzeugs mit einer kurzen Beschreibung.<br><br>
+            Weiterhin erhält man zusätzliche allgemeine Information über sein Fahrzeug.
+          </figcaption>
+        </figure>
+        <figure>
           <div id="status-wrapper">
             <img class="host" src="assets/app/App_start_page.png" alt="Start page of the App">
             <img id="status-open" class="status" src="assets/app/open.png" alt="Request Open">
             <img id="status-in-progress" class="status" src="assets/app/in_progress.png" alt="Request Open">
-            <img id="status-vehicle-on-the-way" class="status" src="assets/app/vehicle_on_the_way.png" alt="Request Open">
+            <img id="status-vehicle-on-the-way" class="status" src="assets/app/vehicle_on_the_way.png"
+              alt="Request Open">
             <img id="status-closed" class="status" src="assets/app/closed.png" alt="Request Open">
-            <button id="left-btn" class="button" onclick="btnLeft()" mouseover="mouseenterEvent()" mouseout="mouseleaveEvent()"><div class="btn-icon"></div></button>
-            <button id="right-btn" class="button" onclick="btnRight()"><div class="btn-icon"></div></button>
+            <button id="left-btn" class="button" onclick="btnLeft()">
+              <div class="btn-icon"></div>
+            </button>
+            <button id="right-btn" class="button" onclick="btnRight()">
+              <div class="btn-icon"></div>
+            </button>
           </div>
           <figcaption>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit nobis, cumque saepe quaerat
-            accusamus. Ab doloribus vitae esse et optio. Debitis exercitationem suscipit quis quos, iste dolores minus
-            consequatur?
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="assets/app/App_start_page.png" alt="Start page of the App">
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit nobis, cumque saepe quaerat
-            accusamus. Ab doloribus vitae esse et optio. Debitis exercitationem suscipit quis quos, iste dolores minus
-            consequatur?
+            Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen status des prozesses geleitet:<br><br>
+            <ol>
+              <li>Anfrage wird bearbeitet</li>
+              <li>Fehler werden analysiert</li>
+              <li>Service-Fahrzeug ist unterwegs, mit vorraussichtlicher Ankunftszeit</li>
+              <li>Mechaniker angekommen und behebt das Problem</li>
+            </ol>
           </figcaption>
         </figure>
       </div>
@@ -97,35 +105,47 @@
       <div class="introduction">
         <span class="headline">Assistance Operator Dashboard</span>
         <p class="description">
-          Das Assistance Operator Dashboard ermöglicht einem Mitarbeiter des Pannehilfeunternehmens komfortabel und effizient Pannenmeldungen von Autofahrern zu bearbeiten.
+          Das Assistance Operator Dashboard ermöglicht einem Mitarbeiter des Pannehilfeunternehmens komfortabel und
+          effizient Pannenmeldungen von Autofahrern zu bearbeiten.
           Der Mitarbeiter bekommt eine Überblick über alle eingegangen Hilfsanfragen und deren Status.
-          Wählt man eine der Hilfsanfragen aus um sie zu bearbeiten, erscheint eine detaillierte Übersicht der Kunden- und Fahrzeuginformationen, die eine schnelle Problemanalyse ermöglicht.<br>
+          Wählt man eine der Hilfsanfragen aus um sie zu bearbeiten, erscheint eine detaillierte Übersicht der Kunden-
+          und Fahrzeuginformationen, die eine schnelle Problemanalyse ermöglicht.<br>
           Anhand des folgenden Bildes werden die Hauptfunktionen genauer erläutert:
         </p>
       </div>
       <div class="content">
-        <p class="left-description">Auf der linken Seite des Dashboards befindet sich die übersicht der eingegangenen Hilfsanfragen.<br> Diese sind je nach Status farblich markiert.<br>
-          Damit das Dashboard bei vielen Anfragen übersichtlich bleibt, können diese über die Filterleiste oder durch eine Suche über das Lupensymbol gefiltert werden.
-          Das rote Symbol am Ende der Sidebar sorgt für einen Reset des Dashboards, sodass das Startszenario wieder geladen wird und das System für eine neue Demonstration bereit ist.
+        <p class="left-description">Auf der linken Seite des Dashboards befindet sich die übersicht der eingegangenen
+          Hilfsanfragen.<br> Diese sind je nach Status farblich markiert.<br>
+          Damit das Dashboard bei vielen Anfragen übersichtlich bleibt, können diese über die Filterleiste oder durch
+          eine Suche über das Lupensymbol gefiltert werden.
+          Das rote Symbol am Ende der Sidebar sorgt für einen Reset des Dashboards, sodass das Startszenario wieder
+          geladen wird und das System für eine neue Demonstration bereit ist.
         </p>
-      <figure>
-        <img src="assets/dashboard/Dashboard.png" alt="Dashboard">
-        <figcaption>
-          In der Mitte des Dashboards ist die detaillierte Übersicht der Kunden- und Fahrzeuginformationen zu erkennen.
-          Anhand des drehbaren Automodells, in dem die fehlerhaften Bereiche des Autos markiert werden, können die vorhandenen Probleme schnell erkannt und analysiert werden.
-          Die eingebundene Karte zeigt das Auto des Kunden und alle verfügbaren Service Fahrzeuge mit ihrer Position an.
-          So kann der Assistance Operator schnell einen Überblick über die einsatzbereiten Service Fahrzeuge und deren Entferung zum Kunden erlangen.
-        </figcaption>
-      </figure>
+        <figure>
+          <img src="assets/dashboard/Dashboard.png" alt="Dashboard">
+          <figcaption>
+            In der Mitte des Dashboards ist die detaillierte Übersicht der Kunden- und Fahrzeuginformationen zu
+            erkennen.
+            Anhand des drehbaren Automodells, in dem die fehlerhaften Bereiche des Autos markiert werden, können die
+            vorhandenen Probleme schnell erkannt und analysiert werden.
+            Die eingebundene Karte zeigt das Auto des Kunden und alle verfügbaren Service Fahrzeuge mit ihrer Position
+            an.
+            So kann der Assistance Operator schnell einen Überblick über die einsatzbereiten Service Fahrzeuge und deren
+            Entferung zum Kunden erlangen.
+          </figcaption>
+        </figure>
         <p class="right-description">
-          Die Elemente auf der rechten Seite des Dashboards zeigen die vom Fahrzeug gesendeten Diagnostic Trouble Codes und deren Beschreibung sowie den Warnleuchtenstatus.
-          Sobald der Assistance Operator das Problem analysiert hat, kann er einen Abschleppwagen oder ein On-site Service Fahrzeug aus der Liste auswählen und entsenden.
-          Sollte der Kunde oder der Assistance Operator weitere Fragen haben, können diese über den Chat am rechten unteren Rand geklärt werden.
+          Die Elemente auf der rechten Seite des Dashboards zeigen die vom Fahrzeug gesendeten Diagnostic Trouble Codes
+          und deren Beschreibung sowie den Warnleuchtenstatus.
+          Sobald der Assistance Operator das Problem analysiert hat, kann er einen Abschleppwagen oder ein On-site
+          Service Fahrzeug aus der Liste auswählen und entsenden.
+          Sollte der Kunde oder der Assistance Operator weitere Fragen haben, können diese über den Chat am rechten
+          unteren Rand geklärt werden.
         </p>
       </div>
     </section>
-    <section id="technologies">
-      <span class="headline">Verwendete Technologien</span>
+    <section id="technologies" class="light">
+      <h1>Verwendete Technologien</h1>
       <div class="content">
         <div class="card">
           <img class="header-logo" src="assets/technologies/angular.svg" height="100px" width="100px"
@@ -227,10 +247,11 @@
       </div>
     </section>
     <section id="architecture" class="dark">
-      <span class="headline">Architektur</span>
+      <h1>Architektur</h1>
       <div class="content">
         <p class="description">
-          Mit hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen, welche als
+          Mit hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen,
+          welche als
           Angular Apps implementiert sind.<br><br>
           Die Angular Apps besorgen über HTTP die von den Nutzern angefragten Informationen vom Spring
           Boot Server,
@@ -246,7 +267,7 @@
         <img src="assets/architecture/architecture.png" alt="Architecture diagram">
       </div>
     </section>
-    <section id="process">
+    <section id="process" class="light">
       <span class="headline">Prozess</span>
       <img src="assets/process/process_overview.png" width="799px" height="317px" alt="Scrum process overview">
       <div class="content">

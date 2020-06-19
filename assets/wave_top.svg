@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920.4552"
+   height="48.86446"
+   viewBox="0 0 508.12044 12.928723"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="wave_top.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect66"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect62"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect58"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect54"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect50"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect46"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="808.03062"
+     inkscape:cy="-471.16669"
+     inkscape:document-units="mm"
+     inkscape:current-layer="svg8"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     height="200px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#251f48;stroke:#000000;stroke-width:0.264237px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 0.01151359,0.13161586 C 52.97005,4.7643612 105.92831,9.3970823 162.26367,10.19885 c 56.33537,0.801768 116.04551,-2.2272588 161.45131,-1.6035528 45.40581,0.6237061 76.50483,4.8999778 104.8307,4.1025278 28.32586,-0.79745 53.9548,-6.6862584 79.54519,-12.56620914"
+     id="path64"
+     inkscape:path-effect="#path-effect66"
+     inkscape:original-d="M 0.01151359,0.13161586 C 52.970029,4.7646014 105.92829,9.3973223 158.88628,14.029778 218.59905,11.000896 278.30919,7.9718696 338.02022,4.9425183 369.12076,9.2192262 400.21978,13.495499 431.31916,17.771592 456.9105,12.069931 482.50055,6.0118723 508.09087,0.13161586" />
+</svg>
