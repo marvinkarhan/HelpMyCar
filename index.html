@@ -49,7 +49,8 @@
       <div class="introduction">
         <span class="headline">Driver App</span>
         <p class="description">
-          Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panna an seinem Fahrzeug zu melden. 
+          Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panna an seinem
+          Fahrzeug zu melden.
           Und Begleitet ihn Anschließend auf dem weg zu der Behebung seiner Panne.<br>
           Die folgenden Bilder zeigen einen Typischen Pannenhilfe Prozess:
         </p>
@@ -58,21 +59,36 @@
         <figure>
           <img src="assets/app/App_start_page.png" alt="Start page of the App">
           <figcaption>
-            Nachdem der Nutzer sich eingelogged hat, kann er seine bei dem HelpMyCar-System regestrierten Fahrzeuge sehen.<br><br>
-            Er kann einen kleinen Überblick über die Panne erhalten und sich dieses Fahrzeug in einer detaillierten Detailansicht ansehen.<br><br>
+            Nachdem der Nutzer sich eingelogged hat, kann er seine bei dem HelpMyCar-System regestrierten Fahrzeuge
+            sehen.<br><br>
+            Er kann einen kleinen Überblick über die Panne erhalten und sich dieses Fahrzeug in einer detaillierten
+            Detailansicht ansehen.<br><br>
             Mit dem button am unteren ende des Bildschirms kann er eine Hilfsanfrage senden.
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/app/App_start_page.png" alt="Start page of the App">
+          <div id="status-wrapper">
+            <img class="host" src="assets/app/App_start_page.png" alt="Start page of the App">
+            <img id="status-open" class="status" src="assets/app/open.png" alt="Request Open">
+            <img id="status-in-progress" class="status" src="assets/app/in_progress.png" alt="Request Open">
+            <img id="status-vehicle-on-the-way" class="status" src="assets/app/vehicle_on_the_way.png" alt="Request Open">
+            <img id="status-closed" class="status" src="assets/app/closed.png" alt="Request Open">
+            <button id="left-btn" class="button" onclick="btnLeft()" mouseover="mouseenterEvent()" mouseout="mouseleaveEvent()"><div class="btn-icon"></div></button>
+            <button id="right-btn" class="button" onclick="btnRight()"><div class="btn-icon"></div></button>
+          </div>
           <figcaption>
-            
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit nobis, cumque saepe quaerat
+            accusamus. Ab doloribus vitae esse et optio. Debitis exercitationem suscipit quis quos, iste dolores minus
+            consequatur?
           </figcaption>
         </figure>
         <figure>
           <img src="assets/app/App_start_page.png" alt="Start page of the App">
           <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit nobis, cumque saepe quaerat accusamus. Ab doloribus vitae esse et optio. Debitis exercitationem suscipit quis quos, iste dolores minus consequatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit nobis, cumque saepe quaerat
+            accusamus. Ab doloribus vitae esse et optio. Debitis exercitationem suscipit quis quos, iste dolores minus
+            consequatur?
           </figcaption>
         </figure>
       </div>
@@ -335,7 +351,7 @@
 
   <script src="sectionManager.js"></script>
   <script src="backTop.js"></script>
-  <script src="script.js"></script>
+  <script src="statusAnimation.js"></script>
 </body>
 
 </html>
