@@ -1,8 +1,3 @@
-var userLang = (navigator.language || navigator.userLanguage);
-let lang = userLang.includes('de') ? 'de' : 'en';
-let currantLang = lang;
-document.getElementById(lang).style.color = '#FFF';
-
 let deContent = new Map([
     ['technologies-nav', 'Technologien'],
     ['architecture-nav', 'Architektur'],
@@ -65,12 +60,22 @@ let enContent = new Map([
     ['footer-a', 'Legal Disclosure']
 ]);
 
+var userLang = (navigator.language || navigator.userLanguage);
+let lang;
+if (userLang.includes('de')) {
+    lang ='de';
+} else {
+    lang ='en';
+}
+var currantLang = lang;
+changeLang(lang);
+document.getElementById(lang).style.color = '#FFF';
+
 // takes a language (either 'de' oder 'en' atm) and changes the language of all text on the site
 // for a element to be able to be translated the translation must be provided in the contrent maps ('deContant' and 'enContent')
 // to add a entry to a content maps add a id to the element and provide it as a key in the content maps with its translation in the specified leng
 // also it must have the class 'translate'
-let changeLang = (lang) => {
-    console.log('change lang', lang, currantLang);
+function changeLang(lang) {
     if (lang === currantLang) {
         return;
     }
@@ -84,4 +89,6 @@ let changeLang = (lang) => {
     document.getElementById(currantLang).style.color = '#707070';
     document.getElementById(lang).style.color = '#FFF';
     currantLang = lang;
-};
+
+    reverseAnimateAll();
+}

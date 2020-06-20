@@ -49,6 +49,9 @@ b {
     transform: translateY(-50%);
     left: 2%;
     z-index: 10;
+}
+
+.animation-slide-in-from-left {
     animation: slide-in-from-left 1s ease-out;
 }
 
@@ -56,6 +59,17 @@ b {
     from {transform: translate(-300%, -50%);}
     to {transform: translate(0, -50%);}
 }
+
+.animation-slide-out-in-from-left {
+    animation: slide-out-in-from-left 2s ease-out;
+}
+
+@keyframes slide-out-in-from-left {
+    0% {transform: translate(0, -50%);}
+    50% {transform: translate(-300%, -50%);}
+    100% {transform: translate(0, -50%);}
+}
+
 
 #navigation a {
     display: block;
@@ -137,13 +151,12 @@ a {
     text-decoration: underline;
 }
 
-.scale-up-bottom {
+.scale-up-bottom-helper {
     overflow: hidden;
 }
 
-.scale-up-bottom > * {
-    position: relative;
-    animation: scale-up-bottom .8s cubic-bezier(0, 0, 0, 1) both;
+.animation-scale-up-bottom {
+    animation: scale-up-bottom .8s cubic-bezier(0, 0, 0, 1);
 }
 
 @keyframes scale-up-bottom {
@@ -152,12 +165,32 @@ a {
     100% {transform: translateY(0);}
 }
 
+.animation-scale-down-up-bottom {
+    animation: scale-down-up-bottom 1.6s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes scale-down-up-bottom {
+    0% {transform: translateY(0);}
+    10% {transform: translateY(-5%);}
+    50% {transform: translateY(200%);}
+    90% {transform: translateY(-5%);}
+    100% {transform: translateY(0);}
+}
+
 #landing-page {
     position: relative;
     padding: 0;
     overflow: hidden;
-    background-image: url('assets/fullscreen_app_scene.png');
-    background-position: bottom;
+}
+
+#landing-page::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: url('assets/fullscreen_app_scene2.png');
+    transform: translate(-1px, -1px);
+    background-position: center;
     background-size: cover;
 }
 
@@ -208,8 +241,25 @@ a {
 
 #landing-page .content p {
     margin-top: 1em;
-    visibility: hidden;
-    animation: slide-up-bottom 1s cubic-bezier(0, 0, 0, 1) .3s forwards;
+}
+
+.animation-slide-up-bottom {
+    animation: slide-up-bottom 1s cubic-bezier(0, 0, 0, 1) .2s;
+}
+
+@keyframes slide-up-bottom {
+    from {transform: translateY(100px);visibility: hidden;}
+    to {transform: translateY(0);visibility: visible;}
+}
+
+.animation-slide-down-up-bottom {
+    animation: slide-down-up-bottom 2.4s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes slide-down-up-bottom {
+    0% {transform: translateY(0);opacity: 1;}
+    50% {transform: translateY(100px);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1}
 }
 
 #landing-page .arrow-down {
@@ -223,13 +273,6 @@ a {
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
 }
-
-
-@keyframes slide-up-bottom {
-    from {transform: translateY(100px);}
-    to {transform: translateY(0);visibility: visible;}
-}
-
 
 #app .introduction {
     padding-bottom: 1em;
@@ -265,6 +308,7 @@ a {
 }
 
 #app .content #status-wrapper #left-btn {
+    padding-right: 85px;
     left: 0;
 }
 
@@ -274,6 +318,7 @@ a {
 }
 
 #app .content #status-wrapper #right-btn {
+    padding-left: 85px;
     right: 0;
 }
 
@@ -291,21 +336,18 @@ a {
 
 #app .content #status-wrapper .status {
     position: absolute;
-    top: 44px;
-    padding-right: 10px;
-    height: 79%;
-    border-radius: 20px;
 }
 
 #app figure {
-    flex: 0 1 10px;
     width: 33%;
     display: flex;
     flex-direction: column;
 }
 
 #app figure img {
+    width: 170px;
     object-fit: cover;
+    align-self: center;
 }
 
 #app figure figcaption {

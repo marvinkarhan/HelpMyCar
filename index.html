@@ -11,7 +11,7 @@
 
 <body>
 
-  <nav id="navigation">
+  <nav id="navigation" class="slide-in-from-left">
     <a id="app-nav" href="#app">App</a>
     <a id="dashboard-nav" href="#dashboard">Dashboard</a>
     <a id="technologies-nav" class="translate" href="#technologies">Technologien</a>
@@ -34,11 +34,11 @@
         <span id="de" class="language-selector" OnClick="changeLang('de')">DE</span> <span>|</span> <span id="en" class="language-selector" OnClick="changeLang('en')">EN</span>
       </div>
       <div class="content">
-        <div class="scale-up-bottom"><span class="headline"><b>Help</b>MyCar</span></div><br>
-        <div class="scale-up-bottom">
-          <h2>Your Roadside Assistance for every situation.</h2>
+        <div  class="scale-up-bottom-helper"><div  class="scale-up-bottom"><span class="headline"><b>Help</b>MyCar</span></div></div><br>
+        <div class="scale-up-bottom-helper">
+          <h2 class="scale-up-bottom">Your Roadside Assistance for every situation.</h2>
         </div>
-        <p id="lading-page-content-p" class="translate">
+        <p id="lading-page-content-p" class="slide-up-bottom translate">
           Das HelpMyCar-System hilft Autofahrern mit einem vernetzten Auto, schnell und einfach Pannen bei einem
           Pannenhilfeunternehmen zu melden.
           Mitarbeiter dieses Unternehmens können die Pannenmeldungen auf einem Dashboard ansehen.
@@ -63,7 +63,7 @@
       </div>
       <div class="content">
         <figure>
-          <img src="assets/app/App_start_page.png" alt="Start page of the App">
+          <img src="assets/app/start_page.PNG" alt="Start page of the App">
           <figcaption id="app-content-figcaption-1" class="translate">
             Nachdem der Nutzer sich eingelogged hat, kann er seine bei dem HelpMyCar-System regestrierten Fahrzeuge
             sehen.<br><br>
@@ -73,7 +73,7 @@
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/app/App_start_page.png" alt="Start page of the App">
+          <img src="assets/app/car_analyisis.PNG" alt="Start page of the App">
           <figcaption id="app-content-figcaption-2" class="translate">
             In der Detailansicht sieht man welches Fahrzeugteil einen Fehler meldet. Darunter sieht man die Warnleuchten
             des Fahrzeugs mit einer kurzen Beschreibung.<br><br>
@@ -82,12 +82,12 @@
         </figure>
         <figure>
           <div id="status-wrapper">
-            <img class="host" src="assets/app/App_start_page.png" alt="Start page of the App">
-            <img id="status-open" class="status" src="assets/app/open.png" alt="Request Open">
-            <img id="status-in-progress" class="status" src="assets/app/in_progress.png" alt="Request Open">
-            <img id="status-vehicle-on-the-way" class="status" src="assets/app/vehicle_on_the_way.png"
+            <img class="placeholder" src="assets/app/open.PNG" style="visibility:none;">
+            <img id="status-open" class="status" src="assets/app/open.PNG" alt="Request Open">
+            <img id="status-in-progress" class="status" src="assets/app/request_accepted.PNG" alt="Request Open">
+            <img id="status-vehicle-on-the-way" class="status" src="assets/app/service_vehicle_on_the_way.PNG"
               alt="Request Open">
-            <img id="status-closed" class="status" src="assets/app/closed.png" alt="Request Open">
+            <img id="status-closed" class="status" src="assets/app/done.PNG" alt="Request Open">
             <button id="left-btn" class="button" onclick="btnLeft()">
               <div class="btn-icon"></div>
             </button>
