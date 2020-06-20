@@ -40,12 +40,12 @@ b {
     transform: translateY(-50%);
     left: 2%;
     z-index: 10;
-    animation: slide-in-from-left 1s ease-out bouth;
+    animation: slide-in-from-left 1s ease-out;
 }
 
 @keyframes slide-in-from-left {
-    from {transform: translateX(-100%);}
-    to {transform: translateX(0);}
+    from {transform: translate(-300%, -50%);}
+    to {transform: translate(0, -50%);}
 }
 
 #navigation a {
@@ -89,19 +89,22 @@ section {
     padding-bottom: 50px;
 }
 
-.light::before {
-    content: url(assets/wave_top.svg);
-    right: 0;
-    position: absolute;
-    top: -1px;
+.light .top-wave, .light .bottom-wave {
+    position: absolute!important;
+    left: 0!important;
+    width: 100%!important;
+    height: auto!important;
 }
 
-.light::after {
-    content: url(assets/wave_bottom.svg);
-    position: absolute;
-    bottom: -5px;
-    left: -10px;
+.light .top-wave {
+    top: -1px!important;
 }
+
+.light .bottom-wave {
+    bottom: 0!important;
+}
+
+
 
 .dark {
     color: #FFF!important;
@@ -127,6 +130,21 @@ a {
     text-decoration: underline;
 }
 
+.scale-up-bottom {
+    overflow: hidden;
+}
+
+.scale-up-bottom > * {
+    position: relative;
+    animation: scale-up-bottom .8s cubic-bezier(0, 0, 0, 1) both;
+}
+
+@keyframes scale-up-bottom {
+    0% {transform: translateY(200%);}
+    80% {transform: translateY(-5%);}
+    100% {transform: translateY(0);}
+}
+
 #landing-page {
     position: relative;
     padding: 0;
@@ -136,6 +154,11 @@ a {
     background-size: cover;
 }
 
+#landing-page .headline {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
 
 #landing-page .content {
     position: relative;
@@ -143,15 +166,19 @@ a {
     left: 65%;
 }
 
-#landing-page .content .headline {
-    font: var(--light-manrope);
-    line-height: normal;
-}
 #landing-page .content .headline b{
     font-size: 50px;
 }
 
+#landing-page .content h1 {
+    margin-bottom: 0;
+}
 
+#landing-page .content p {
+    margin-top: 1em;
+    visibility: hidden;
+    animation: slide-up-bottom 1s cubic-bezier(0, 0, 0, 1) .3s forwards;
+}
 
 #landing-page .arrow-down {
     border: solid #FFF;
@@ -164,6 +191,13 @@ a {
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
 }
+
+
+@keyframes slide-up-bottom {
+    from {transform: translateY(100px);}
+    to {transform: translateY(0);visibility: visible;}
+}
+
 
 #app .introduction {
     padding-bottom: 1em;
@@ -251,13 +285,9 @@ a {
     padding-right: 1em;
 }
 
-#dashboard .introduction {
-    text-align: center;
-}
-
 #dashboard .introduction .description {
     max-width: 900px;
-    margin: 1em auto;
+    margin: 1em 0;
 }
 
 #dashboard .content {
@@ -265,21 +295,23 @@ a {
     flex-direction: row;
 }
 
-#dashboard .content .left-description {
-    padding-top: 3em;
-}
-
-#dashboard .content .right-description {
-    padding-top: 3em;
-}
-#dashboard figure {
-    flex: 0 1 10px;
+#dashboard .content ol {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5em;
+    flex: 1;
+    max-width: 500px;
+    min-width: 350px;
 }
 
-#dashboard figure img {
-    object-fit: cover;
+#dashboard .content ol > li {
+    padding: 1em 0;
+}
+
+#dashboard .content img {
+    margin: auto;
+    width: 40%;
 }
 
 #technologies {
@@ -393,8 +425,11 @@ a {
     }
 }
 
-#architecture .headline {
-    width: auto;
+@media screen and (max-width: 1300px) {
+    #technologies .content .card ul li img {
+        width: 32px;
+        height: auto;
+    }
 }
 
 #architecture .content {
@@ -407,20 +442,12 @@ a {
     max-width: 400px;
 }
 
-#architecture .content .spacer {
-    width: 100px;
-    min-width: 0;
-}
-
 #architecture .content .description a {
     color: #FFF;
 }
 
-#architecture img {
-    align-self: center;
-    max-width: 550px;
-    width: 700px;
-    height: auto;
+#architecture .content img {
+    width: 40%;
     margin: auto;
 }
 
@@ -435,7 +462,8 @@ a {
 }
 
 #process .content {
-    padding-right: 6.25em;
+    max-width: 1050px;
+    align-self: center;
 }
 
 @media screen and (max-width: 1365px), screen and (max-height: 700px) {

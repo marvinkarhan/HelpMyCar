@@ -30,8 +30,10 @@
   <div id="content-wrapper">
     <section id="landing-page" class="dark">
       <div class="content">
-        <span class="headline"><b>Help</b>MyCar</span><br>
-        <h1>Your Roadside Assistance for every situation.</h1>
+        <div class="scale-up-bottom"><span class="headline"><b>Help</b>MyCar</span></div><br>
+        <div class="scale-up-bottom">
+          <h1>Your Roadside Assistance for every situation.</h1>
+        </div>
         <p>
           Das HelpMyCar-System hilft Autofahrern mit einem vernetzten Auto, schnell und einfach Pannen bei einem
           Pannenhilfeunternehmen zu melden.
@@ -90,7 +92,8 @@
             </button>
           </div>
           <figcaption>
-            Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen status des prozesses geleitet:<br><br>
+            Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen status des prozesses
+            geleitet:<br><br>
             <ol>
               <li>Anfrage wird bearbeitet</li>
               <li>Fehler werden analysiert</li>
@@ -103,27 +106,26 @@
     </section>
     <section id="dashboard" class="dark">
       <div class="introduction">
-        <span class="headline">Assistance Operator Dashboard</span>
+        <h1>Assistance Operator Dashboard</h1>
         <p class="description">
           Das Assistance Operator Dashboard ermöglicht einem Mitarbeiter des Pannehilfeunternehmens komfortabel und
           effizient Pannenmeldungen von Autofahrern zu bearbeiten.
           Der Mitarbeiter bekommt eine Überblick über alle eingegangen Hilfsanfragen und deren Status.
           Wählt man eine der Hilfsanfragen aus um sie zu bearbeiten, erscheint eine detaillierte Übersicht der Kunden-
           und Fahrzeuginformationen, die eine schnelle Problemanalyse ermöglicht.<br>
-          Anhand des folgenden Bildes werden die Hauptfunktionen genauer erläutert:
+          Das Dashboard ist in drei Spalten gegliedert, welche anhand des folgenden Bildes genauer erläutert werden:
         </p>
       </div>
       <div class="content">
-        <p class="left-description">Auf der linken Seite des Dashboards befindet sich die übersicht der eingegangenen
-          Hilfsanfragen.<br> Diese sind je nach Status farblich markiert.<br>
-          Damit das Dashboard bei vielen Anfragen übersichtlich bleibt, können diese über die Filterleiste oder durch
-          eine Suche über das Lupensymbol gefiltert werden.
-          Das rote Symbol am Ende der Sidebar sorgt für einen Reset des Dashboards, sodass das Startszenario wieder
-          geladen wird und das System für eine neue Demonstration bereit ist.
-        </p>
-        <figure>
-          <img src="assets/dashboard/Dashboard.png" alt="Dashboard">
-          <figcaption>
+        <ol class="description">
+          <li class="left-description">Auf der linken Seite des Dashboards befindet sich die übersicht der eingegangenen
+            Hilfsanfragen.<br> Diese sind je nach Status farblich markiert.<br>
+            Damit das Dashboard bei vielen Anfragen übersichtlich bleibt, können diese über die Filterleiste oder durch
+            eine Suche über das Lupensymbol gefiltert werden.
+            Das rote Symbol am Ende der Sidebar sorgt für einen Reset des Dashboards, sodass das Startszenario wieder
+            geladen wird und das System für eine neue Demonstration bereit ist.
+          </li>
+          <li class="middle-description">
             In der Mitte des Dashboards ist die detaillierte Übersicht der Kunden- und Fahrzeuginformationen zu
             erkennen.
             Anhand des drehbaren Automodells, in dem die fehlerhaften Bereiche des Autos markiert werden, können die
@@ -132,16 +134,18 @@
             an.
             So kann der Assistance Operator schnell einen Überblick über die einsatzbereiten Service Fahrzeuge und deren
             Entferung zum Kunden erlangen.
-          </figcaption>
-        </figure>
-        <p class="right-description">
-          Die Elemente auf der rechten Seite des Dashboards zeigen die vom Fahrzeug gesendeten Diagnostic Trouble Codes
-          und deren Beschreibung sowie den Warnleuchtenstatus.
-          Sobald der Assistance Operator das Problem analysiert hat, kann er einen Abschleppwagen oder ein On-site
-          Service Fahrzeug aus der Liste auswählen und entsenden.
-          Sollte der Kunde oder der Assistance Operator weitere Fragen haben, können diese über den Chat am rechten
-          unteren Rand geklärt werden.
-        </p>
+          </li>
+          <li class="right-description">
+            Die Elemente auf der rechten Seite des Dashboards zeigen die vom Fahrzeug gesendeten Diagnostic Trouble
+            Codes
+            und deren Beschreibung sowie den Warnleuchtenstatus.
+            Sobald der Assistance Operator das Problem analysiert hat, kann er einen Abschleppwagen oder ein On-site
+            Service Fahrzeug aus der Liste auswählen und entsenden.
+            Sollte der Kunde oder der Assistance Operator weitere Fragen haben, können diese über den Chat am rechten
+            unteren Rand geklärt werden.
+          </li>
+        </ol>
+        <img src="assets/dashboard/Dashboard.png" alt="Dashboard">
       </div>
     </section>
     <section id="technologies" class="light">
@@ -247,30 +251,32 @@
       </div>
     </section>
     <section id="architecture" class="dark">
-      <h1>Architektur</h1>
       <div class="content">
-        <p class="description">
-          Mit hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen,
-          welche als
-          Angular Apps implementiert sind.<br><br>
-          Die Angular Apps besorgen über HTTP die von den Nutzern angefragten Informationen vom Spring
-          Boot Server,
-          welcher über eine Caruso Dataplace API-Schnittstelle Informationen von vernetzten Fahrzeugen abfragt und dem
-          Frontend bereitstellt.<br><br>
-          Die Zusatzfunktion, die Fahrzeuge auf dem Dashboard auf einer Karte zu sehen, wird mithilfe der GoogleMaps-API
-          ermöglicht.<br><br>
-          <!-- replace with pdf in final version -->
-          <a href="https://docs.google.com/document/d/1RltXlK2qRYT2AJGyXw6D1JgG6KOfY2wIGi_slux4Obc/edit?usp=sharing"
-            target="_blank">In der Architekturspezifikiation weiter lesen...</a>
-        </p>
-        <div class="spacer"></div>
         <img src="assets/architecture/architecture.png" alt="Architecture diagram">
+        <div class="text">
+          <h1>Architektur</h1>
+          <p class="description">
+            Mit hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen,
+            welche als
+            Angular Apps implementiert sind.<br><br>
+            Die Angular Apps besorgen über HTTP die von den Nutzern angefragten Informationen vom Spring
+            Boot Server,
+            welcher über eine Caruso Dataplace API-Schnittstelle Informationen von vernetzten Fahrzeugen abfragt und dem
+            Frontend bereitstellt.<br><br>
+            Die Zusatzfunktion, die Fahrzeuge auf dem Dashboard auf einer Karte zu sehen, wird mithilfe der
+            GoogleMaps-API
+            ermöglicht.<br><br>
+            <!-- replace with pdf in final version -->
+            <a href="https://docs.google.com/document/d/1RltXlK2qRYT2AJGyXw6D1JgG6KOfY2wIGi_slux4Obc/edit?usp=sharing"
+              target="_blank">In der Architekturspezifikiation weiter lesen...</a>
+          </p>
+        </div>
       </div>
     </section>
     <section id="process" class="light">
-      <span class="headline">Prozess</span>
-      <img src="assets/process/process_overview.png" width="799px" height="317px" alt="Scrum process overview">
+      <img src="assets/process/olga-guryanova-ft7vJxwl2RY-unsplash.jpg" alt="Scrum">
       <div class="content">
+        <h1>Prozess</h1>
         <h1><a href="https://www.scrum.org/resources/scrum-guide" target="_blank">Scrum</a> Struktur</h1>
         <p>
           Ein Sprint dauert jeweils von Dienstag 10:00 Uhr bis Dienstag 09:59 Uhr. Die Retrospektive des vergangenen
@@ -299,6 +305,7 @@
           bearbeiten möchte.
         </p>
       </div>
+      <!-- <img src="assets/process/process_overview.png" width="799px" height="317px" alt="Scrum process overview"> -->
     </section>
     <section id="team" class="dark">
       <h1>Unser Team</h1>
@@ -370,9 +377,10 @@
     </section>
   </div>
 
-  <script src="sectionManager.js"></script>
-  <script src="backTop.js"></script>
-  <script src="statusAnimation.js"></script>
+  <script src="assets/js/sectionManager.js"></script>
+  <script src="assets/js/backTop.js"></script>
+  <script src="assets/js/statusAnimation.js"></script>
+  <script src="assets/js/insertWave.js"></script>
 </body>
 
 </html>
