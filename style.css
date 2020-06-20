@@ -533,16 +533,24 @@ a {
     justify-content: space-around;
 }
 
-#process img {
-    align-self: center;
-    width: auto;
-    height: 40%;
+#process .process-img {
+    width: 40%;
+    margin-left: 15%;
     border-radius: 20px;
 }
 
 #process .content {
-    max-width: 1050px;
-    align-self: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#process .content .p-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#process .content .p-wrapper > * {
+    width: 45%;
 }
 
 @media screen and (max-width: 1365px), screen and (max-height: 700px) {
