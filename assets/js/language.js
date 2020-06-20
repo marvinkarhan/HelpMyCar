@@ -79,11 +79,3 @@ let changeLang = (lang) => {
     document.getElementById(lang).style.color = '#FFF';
     currantLang = lang;
 };
-
-
-let elToTranslate = document.getElementsByClassName('translate');
-
-for (const el of elToTranslate) {
-    // console.log(el.id, el.textContent);
-    console.log(el.id, el.innerHTML);
-}
