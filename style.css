@@ -101,7 +101,7 @@ section {
 }
 
 .light .bottom-wave {
-    bottom: 0!important;
+    bottom: -1px!important;
 }
 
 
