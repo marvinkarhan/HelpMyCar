@@ -27,6 +27,15 @@ body {
 
 h1 {
     font: var(--bold-manrope);
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font: var(--bold-manrope);
+    font-size: 18px;
+    line-height: 22px;
     margin-bottom: 1em;
 }
 
@@ -463,6 +472,7 @@ a {
 #architecture .content .description {
     min-width: 150px;
     max-width: 400px;
+    margin-right: 10%;
 }
 
 #architecture .content .description a {
@@ -472,6 +482,8 @@ a {
 #architecture .content img {
     width: 40%;
     margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #process {
@@ -482,6 +494,7 @@ a {
     align-self: center;
     width: auto;
     height: 40%;
+    border-radius: 20px;
 }
 
 #process .content {
