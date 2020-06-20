@@ -295,7 +295,7 @@ a {
 
 #app .content #status-wrapper .button {
     position: absolute;
-    height: calc(100% + -17px);
+    height: 100%;
     width: 50%;
     background: transparent;
     border: 0;
@@ -352,6 +352,7 @@ a {
 
 #app figure figcaption {
     padding: 0 1em;
+    padding-top: 2em;
 }
 
 #app figure figcaption ol {
