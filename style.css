@@ -104,15 +104,13 @@ section {
     bottom: -1px!important;
 }
 
-
-
 .dark {
-    color: #FFF!important;
+    color: #FFF;
     background-color: #251F48;
 }
 
 .dark a {
-    color: #FFF!important;
+    color: #FFF;
 }
 
 .headline {
@@ -153,6 +151,31 @@ a {
     background-position: bottom;
     background-size: cover;
 }
+
+#landing-page #language-selection {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #251F48;
+    z-index: 100;
+}
+
+#landing-page .language-selector {
+    color: var(--text-color);
+    cursor: pointer;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#landing-page .language-selector:hover {
+    color: #FFF;
+}
+
 
 #landing-page .headline {
     display: block;

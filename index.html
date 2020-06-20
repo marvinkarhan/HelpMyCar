@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
@@ -29,12 +29,16 @@
   </a>
   <div id="content-wrapper">
     <section id="landing-page" class="dark">
+      <div id="language-selection">
+        <img src="assets/globe.svg" height="18px" alt="Globe">
+        <span id="de" class="language-selector" OnClick="changeLang('de')">DE</span> <span>|</span> <span id="en" class="language-selector" OnClick="changeLang('en')">EN</span>
+      </div>
       <div class="content">
         <div class="scale-up-bottom"><span class="headline"><b>Help</b>MyCar</span></div><br>
         <div class="scale-up-bottom">
           <h1>Your Roadside Assistance for every situation.</h1>
         </div>
-        <p>
+        <p id="lading-page-content-p" class="translate">
           Das HelpMyCar-System hilft Autofahrern mit einem vernetzten Auto, schnell und einfach Pannen bei einem
           Pannenhilfeunternehmen zu melden.
           Mitarbeiter dieses Unternehmens können die Pannenmeldungen auf einem Dashboard ansehen.
@@ -50,7 +54,7 @@
     <section id="app" class="light">
       <div class="introduction">
         <h1>Driver App</h1>
-        <p class="description">
+        <p id="app-introduction-p" class="description translate">
           Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panne an seinem
           Fahrzeug zu melden
           und begleitet ihn anschließend auf dem Weg zu der Behebung seiner Panne.<br>
@@ -60,7 +64,7 @@
       <div class="content">
         <figure>
           <img src="assets/app/App_start_page.png" alt="Start page of the App">
-          <figcaption>
+          <figcaption id="app-content-figcaption-1" class="translate">
             Nachdem der Nutzer sich eingelogged hat, kann er seine bei dem HelpMyCar-System regestrierten Fahrzeuge
             sehen.<br><br>
             Er kann einen kleinen Überblick über die Panne erhalten und sich dieses Fahrzeug in einer detaillierten
@@ -70,7 +74,7 @@
         </figure>
         <figure>
           <img src="assets/app/App_start_page.png" alt="Start page of the App">
-          <figcaption>
+          <figcaption id="app-content-figcaption-2" class="translate">
             In der Detailansicht sieht man welches Fahrzeugteil einen Fehler meldet. Darunter sieht man die Warnleuchten
             des Fahrzeugs mit einer kurzen Beschreibung.<br><br>
             Weiterhin erhält man zusätzliche allgemeine Information über sein Fahrzeug.
@@ -91,7 +95,7 @@
               <div class="btn-icon"></div>
             </button>
           </div>
-          <figcaption>
+          <figcaption id="app-content-figcaption-3" class="translate">
             Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen status des prozesses
             geleitet:<br><br>
             <ol>
@@ -381,6 +385,7 @@
   <script src="assets/js/backTop.js"></script>
   <script src="assets/js/statusAnimation.js"></script>
   <script src="assets/js/insertWave.js"></script>
+  <script src="assets/js/language.js"></script>
 </body>
 
 </html>
