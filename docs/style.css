@@ -243,6 +243,29 @@ a {
     margin-top: 1em;
 }
 
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 1em 0;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #251F48;
+    box-shadow: 0 8px 24px -17px #000101;
+    font-weight: 500;
+}
+
+.github-btn:hover {
+    background-color: #3b355a;
+}
+
+.github-btn img {
+    margin-left: 1em;
+    width: 32px;
+}
+
 .animation-slide-up-bottom {
     animation: slide-up-bottom 1s cubic-bezier(0, 0, 0, 1) .2s;
 }
