@@ -10,7 +10,7 @@ The project consists of two frontend web-apps and a backend application:
 - A dashbord app where an assistant operator can see and respond to help requests.
 - A backend application that acts as a REST-service for the frontend and sends http-requests to the car API to gather vehicle information.
 <br>
-You can visit the website of this repository on helpmycar.cf
+You can visit the website of this repository on [helpmycar.cf]
 
 ## Team
 
