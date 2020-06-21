@@ -42,11 +42,11 @@
           <h2 class="scale-up-bottom">Your Roadside Assistance for every situation.</h2>
         </div>
         <p id="lading-page-content-p" class="slide-up-bottom translate">
-          Das HelpMyCar-System hilft Autofahrern mit einem vernetzten Auto, schnell und einfach Pannen bei einem
+          Das HelpMyCar-System hilft Autofahrern die ein vernetztes Auto besitzen, schnell und einfach Pannen bei einem
           Pannenhilfeunternehmen zu melden.
           Mitarbeiter dieses Unternehmens können die Pannenmeldungen auf einem Dashboard ansehen.
-          Dabei werden die von dem vernetzten Auto übermittelte Daten über den Caruso Dataplace geholt,
-          angezeigt und bestehende Probleme visualisiert.
+          Dabei werden die von dem vernetzten Auto übermittelten Daten über den Caruso Dataplace angefragt,
+          angezeigt und visualisiert.
           Dem Mitarbeiter werden die aktuell verfügbaren Service-Fahrzeuge des Unternehmens angezeigt.
           Mit Hilfe dieser Informationen kann der Mitarbeiter entscheiden, wie man dem Kunden am schnellsten helfen
           kann.
@@ -58,9 +58,8 @@
       <div class="introduction">
         <h1>Driver App</h1>
         <p id="app-introduction-p" class="description translate">
-          Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panne an seinem
-          Fahrzeug zu melden
-          und begleitet ihn anschließend auf dem Weg zu der Behebung seiner Panne.<br>
+          Die HelpMyCar Driver App ermöglicht es Fahrern eines vernetzten Autos unkompliziert eine Panne zu melden
+          und begleitet sie anschließend durch den Hilfsprozess.<br>
           Die folgenden Bilder zeigen einen typischen Pannenhilfeprozess:
         </p>
       </div>
@@ -68,19 +67,19 @@
         <figure>
           <img src="assets/app/start_page.PNG" alt="Start page of the App">
           <figcaption id="app-content-figcaption-1" class="translate">
-            Nachdem der Nutzer sich eingelogged hat, kann er seine bei dem HelpMyCar-System regestrierten Fahrzeuge
+            Nachdem der Nutzer sich angemeldet hat, kann er die von Ihm registrierten Fahrzeuge
             sehen.<br><br>
-            Er kann einen kleinen Überblick über die Panne erhalten und sich dieses Fahrzeug in einer detaillierten
-            Detailansicht ansehen.<br><br>
+            Er erhält einen Überblick über die Panne und kann sich dieses Fahrzeug in einer detaillierten
+            Ansicht ansehen.<br><br>
             Mit dem Button am unteren Ende des Bildschirms kann er eine Hilfsanfrage senden.
           </figcaption>
         </figure>
         <figure>
           <img src="assets/app/car_analyisis.PNG" alt="Start page of the App">
           <figcaption id="app-content-figcaption-2" class="translate">
-            In der Detailansicht sieht man welches Fahrzeugteil einen Fehler meldet. Darunter sieht man die Warnleuchten
+            In der Detailansicht erkennt man welches Fahrzeugteil einen Fehler meldet. Darunter sieht man die Warnleuchten
             des Fahrzeugs mit einer kurzen Beschreibung.<br><br>
-            Weiterhin erhält man zusätzliche allgemeine Information über sein Fahrzeug.
+            Weiterhin erhält man zusätzliche allgemeine Informationen über das Fahrzeug.
           </figcaption>
         </figure>
         <figure>
@@ -99,13 +98,13 @@
             </button>
           </div>
           <figcaption id="app-content-figcaption-3" class="translate">
-            Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen status des prozesses
+            Im Hauptschritt des Pannenhilfeprozess wird der Nutzer durch die vier verschiedenen Status des Prozesses
             geleitet:<br><br>
             <ol>
               <li>Anfrage wird bearbeitet</li>
               <li>Fehler werden analysiert</li>
               <li>Service-Fahrzeug ist unterwegs, mit vorraussichtlicher Ankunftszeit</li>
-              <li>Mechaniker angekommen und behebt das Problem</li>
+              <li>Mechaniker ist angekommen und behebt das Problem</li>
             </ol>
           </figcaption>
         </figure>
@@ -126,7 +125,7 @@
       <div class="content">
         <ol class="description">
           <li id="dashboard-content-description-left" class="left-description translate">
-            Auf der linken Seite des Dashboards befindet sich die übersicht der eingegangenen
+            Auf der linken Seite des Dashboards befindet sich die Übersicht der eingegangenen
             Hilfsanfragen.<br> Diese sind je nach Status farblich markiert.<br>
             Damit das Dashboard bei vielen Anfragen übersichtlich bleibt, können diese über die Filterleiste oder durch
             eine Suche über das Lupensymbol gefiltert werden.
@@ -138,17 +137,17 @@
             erkennen.
             Anhand des drehbaren Automodells, in dem die fehlerhaften Bereiche des Autos markiert werden, können die
             vorhandenen Probleme schnell erkannt und analysiert werden.
-            Die eingebundene Karte zeigt das Auto des Kunden und alle verfügbaren Service Fahrzeuge mit ihrer Position
+            Die eingebundene Karte zeigt das Auto des Kunden und alle verfügbaren Service-Fahrzeuge mit ihrer Position
             an.
-            So kann der Assistance Operator schnell einen Überblick über die einsatzbereiten Service Fahrzeuge und deren
-            Entferung zum Kunden erlangen.
+            So kann der Assistance Operator schnell einen Überblick über die einsatzbereiten Service-Fahrzeuge und deren
+            Entfernung zum Kunden erlangen.
           </li>
           <li id="dashboard-content-description-right" class="right-description translate">
             Die Elemente auf der rechten Seite des Dashboards zeigen die vom Fahrzeug gesendeten Diagnostic Trouble
             Codes
             und deren Beschreibung sowie den Warnleuchtenstatus.
-            Sobald der Assistance Operator das Problem analysiert hat, kann er einen Abschleppwagen oder ein On-site
-            Service Fahrzeug aus der Liste auswählen und entsenden.
+            Sobald der Assistance Operator das Problem analysiert hat, kann er den passenden Abschleppwagen oder ein On-site
+            Service-Fahrzeug aus der Liste auswählen und entsenden.
             Sollte der Kunde oder der Assistance Operator weitere Fragen haben, können diese über den Chat am rechten
             unteren Rand geklärt werden.
           </li>
@@ -264,14 +263,13 @@
         <div class="text">
           <h1 id="architecture-content-text-h1" class="translate">Architektur</h1>
           <p id="architecture-content-text-p" class="description translate">
-            Mit hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen,
+            Mit Hilfe eines Browsers können die Endnutzer des HelpMyCar-Systems auf die App und das Dashboard zugreifen,
             welche als
             Angular Apps implementiert sind.<br><br>
-            Die Angular Apps besorgen über HTTP die von den Nutzern angefragten Informationen vom Spring
-            Boot Server,
-            welcher über eine Caruso Dataplace API-Schnittstelle Informationen von vernetzten Fahrzeugen abfragt und dem
-            Frontend bereitstellt.<br><br>
-            Die Zusatzfunktion, die Fahrzeuge auf dem Dashboard auf einer Karte zu sehen, wird mithilfe der
+            Die Angular Apps kommunizieren über HTTP mit dem Spring
+            Boot Backend, welches über die Caruso Dataplace API Informationen zu den vernetzten Fahrzeugen abfragt und
+            anschließend dem Frontend bereitstellt.<br><br>
+            Die Zusatzfunktion, die Fahrzeuge auf dem Dashboard auf einer Karte anzuzeigen, wird mithilfe der
             GoogleMaps-API
             ermöglicht.<br><br>
           </p>
@@ -310,7 +308,7 @@
               In unserem Team wird die Rolle des Scrum Masters nicht besetzt. Stattdessen übernimmt Anastasia Tataridou
               die
               Planung und
-              Moderation der einzelnen Meetings. Einen Product Owner im eigentlichen Sinne haben wir ebenfalls nicht.
+              Moderation der einzelnen Meetings.
               Die
               Priorisierung
               der Aufgaben und Features erfolgt gemeinsam als Team in enger Absprache mit dem Ansprechpartner des
@@ -329,7 +327,7 @@
     </section>
     <section id="team" class="dark">
       <h1 id="team-h1" class="translate">Unser Team</h1>
-      <p id="team-description">
+      <p id="team-description" class="translate">
         Bestehend aus vier Kommunikationsdesignern und fünf Informatikstudenten der<br>
         Hochschule Mannheim bietet unser Team ein umfassendes Paket an Kompetenzen.<br>
         Zusammen sind wir Greenbox Collective und haben die vergangenen drei Monate<br>
