@@ -52,7 +52,7 @@ export class DistanceGeoCodingService {
     } else {
       // retrieve data from google maps api
       const position = new BehaviorSubject<string>('DEFAULT');
-      this.http.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${inVehicleData.response.geolocation.dataPoint.latitude},${inVehicleData.response.geolocation.dataPoint.longitude}&key=AIzaSyCRijltpX7Q5dcRqDZxTlFckC5ToGD101I`
+      this.http.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${inVehicleData.response.geolocation.dataPoint.latitude},${inVehicleData.response.geolocation.dataPoint.longitude}&key={{insert_APIKey}}`
       ).subscribe((result: any) => {
         const address = result.results[0].formatted_address;
         position.next(address);
